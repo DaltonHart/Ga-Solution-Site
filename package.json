@@ -1,0 +1,22 @@
+{
+  "name": "ga-solution",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaltonHart/Ga-Solution-Site.git"
+  },
+  "author": "dalton hart daltonvaren@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DaltonHart/Ga-Solution-Site/issues"
+  },
+  "homepage": "https://github.com/DaltonHart/Ga-Solution-Site#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
