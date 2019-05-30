@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/DaltonHart/Ga-Solution-Site#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "semantic-ui": "^2.4.2"
   }
 }

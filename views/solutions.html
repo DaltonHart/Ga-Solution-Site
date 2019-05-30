@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<script src="scripts/vendor/prism.js" defer></script>
+		<script src="scripts/app.js"></script>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			media="screen"
+			href="styles/vendor/prism.css"
+		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			media="screen"
+			href="styles/vendor/semantic.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			media="screen"
+			href="styles/main.css"
+		/>
+		<title>GA Addmissions</title>
+	</head>
+	<body>
+		<nav>
+			<div class="ui top inverted fixed menu">
+				<a class="item" href="/">
+					<img src="/images/logo.png" />
+					<p class="logo">GENERAL ASSEMBLY</p>
+				</a>
+				<a href="/solutions" class="item">Solutions</a>
+				<a href="/faq" class="item">FAQ</a>
+			</div>
+		</nav>
+		<div class="solutions">
+			<div class="ui segment">
+				Below you will find several solutions to the pokemon assigment at
+				various student levels.
+			</div>
+			<!-- solution 1 -->
+			<div class="ui segment">
+				<div class="ui stackable grid">
+					<div class="eight wide column">
+						<div class="ui top attached label header-yellow">
+							<h1>Most common solution.</h1>
+						</div>
+					</div>
+					<div class="eight wide column">
+						<div class="code-red ui segment">
+							<pre><code class="language-javascript">app.shakePokeball = function shakePokeball() {
+	// code BELOW this line for challenge #1 -->
+	var pokeball = document.getElementById('pokeball');
+	pokeball.class = 'shake';
+}; // <-- code ABOVE this line for challenge #1
+
+app.setName = function setName() {
+	// code BELOW this line for challenge #2 -->
+	var name = prompt('What is your name?');
+	var firstName = document.getElementById('first-name');
+	firstName.innerHTML = name;
+}; // <-- code ABOVE this line for challenge #2
+
+app.setWebsite = function setWebsite() {
+	// code BELOW this line for challenge #3 & bonus -->
+	var favSite = prompt('What is your favorite site?');
+	var site = document.getElementById('favorite-website');
+	// site.innerHTML = site;
+
+	// bonus
+	var anchor = document.createElement('a');
+	anchor.setAttribute('href', 'http://www.' + favSite);
+	anchor.textContent = favSite;
+	site.appendChild(anchor);
+}; // <-- code ABOVE this line for challenge #3 & bonus</code></pre>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Solution 2 -->
+			<div class="ui segment">
+				<div class="ui stackable grid">
+					<div class="eight wide column">
+						<div class="ui top attached label header-yellow">
+							<h1>Solution with more advance bonus handling.</h1>
+						</div>
+					</div>
+					<div class="eight wide column">
+						<div class="code-red ui segment">
+							<pre><code class="language-javascript">app.shakePokeball = function shakePokeball() {
+	// code BELOW this line for challenge #1 -->
+	var pokeball = document.getElementById('pokeball');
+	pokeball.class = 'shake';
+}; // <-- code ABOVE this line for challenge #1
+
+app.setName = function setName() {
+	// code BELOW this line for challenge #2 -->
+	var name = prompt('What is your name?');
+	var firstName = document.getElementById('first-name');
+	firstName.innerHTML = name;
+}; // <-- code ABOVE this line for challenge #2
+
+app.setWebsite = function setWebsite() {
+	// code BELOW this line for challenge #3 & bonus -->
+	var favSite = prompt('What is your favorite site?');
+	var site = document.getElementById('favorite-website');
+	// site.innerHTML = site;
+
+	// bonus
+	var anchor = `<a href='http://www.${favSite}.com'>${favSite}</a>`;
+	site.innerHTML = anchor;
+}; // <-- code ABOVE this line for challenge #3 & bonus
+</code></pre>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Soltion 3 -->
+			<div class="ui segment">
+				<div class="ui stackable grid">
+					<div class="eight wide column">
+						<div class="ui top attached label header-yellow">
+							<h1>
+								Advanced solution.
+							</h1>
+							<h4>Shows higher level understanding of JS and newer syntax.</h4>
+						</div>
+					</div>
+					<div class="eight wide column">
+						<div class="code-red ui segment">
+							<pre><code class="language-javascript">app.shakePokeball = () => {
+	// code BELOW this line for challenge #1 -->
+	document.getElementById('pokeball').class = 'shake';
+}; // <-- code ABOVE this line for challenge #1
+
+app.setName = () => {
+	// code BELOW this line for challenge #2 -->
+	let name = prompt('What is your name?');
+	document.getElementById('first-name').innerHTML = name;
+}; // <-- code ABOVE this line for challenge #2
+
+app.setWebsite = () => {
+	// code BELOW this line for challenge #3 & bonus -->
+	let favSite = prompt('What is your favorite site?');
+	document.getElementById(
+		'favorite-website'
+	).innerHTML = `<a href='http://www.${favSite}.com'>${favSite}</a>`;
+}; // <-- code ABOVE this line for challenge #3 & bonus</code></pre>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
